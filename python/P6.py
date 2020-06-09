@@ -1,9 +1,15 @@
-def solve():
-    N = 100
-    num_sequence = range(1, N + 1)
-    sum_of_squares = sum(i**2 for i in num_sequence)
-    sum_squared = sum(i for i in num_sequence) ** 2
-    return sum_squared - sum_of_squares 
+def solve(N):
+	elements = [x for x in range(1,N+1)]
+	num = len(elements)
+	i = 0
+	SUM = 0
+	while i < num - 1:
+		j = i + 1
+		while j < num:
+			SUM += 2 * elements[i] * elements[j]
+			j += 1
+		i += 1
+	return SUM
 
 if __name__ == "__main__":
-    print(solve())
+    print(solve(100))
