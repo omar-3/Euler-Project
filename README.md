@@ -3,7 +3,7 @@
 This repository is dedicated to providing implementation to the 700 problems in the project. We attempt solving each problem in several programming languages while maintaining the expressiveness of the implementation is our number one concern. Currently the repository is still a work-in-progress and will be periodically updated over the next couple of months. 
 
 ### Table of the problems</br>
-|#|Python|Java|Typescript|C|Rust|Bash|Explaination|</br>
+|#|python|java|typescript|C|rust|bash|explanation|</br>
 |---|---|---|---|---|---|---|---|---|
 |6|[x](./python/P6.py)||||||||
 |7|[x](./python/P7.py)||||||||
