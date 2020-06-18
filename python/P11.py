@@ -30,7 +30,7 @@ def solve(number_of_elements):
 
     for i in range(0, GRID.shape[0] - number_of_elements - 1):
         for j in range(0, GRID.shape[1] - number_of_elements - 1):
-            window = GRID[i:i+4, j:j+4]
+            window = GRID[i:i + number_of_elements, j:j + number_of_elements]
             # 4 vertical arrays
             for k in range(0, number_of_elements):
                 array = window[:,k:k+1]
