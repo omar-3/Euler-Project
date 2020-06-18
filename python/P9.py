@@ -1,10 +1,10 @@
 from common import is_pythagorean
 
-def solve(summation):
-    for a in range(1, summation):
-        for b in range(a, summation):
-            for c in range(b, summation):
-                if is_pythagorean(a, b, c) and a + b + c == summation:
+def solve(total):
+    for a in range(1, total):
+        for b in range(a, total):
+            for c in range(b, total):
+                if is_pythagorean(a, b, c) and a + b + c == total:
                     return (a,b,c), a*b*c
 
 
