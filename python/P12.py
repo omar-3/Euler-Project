@@ -3,9 +3,8 @@ from itertools import count
 
 
 def solve(NUM_DIVS):
-    triangle_num = 0
     for i in count(1):
-        triangle_num += i
+        triangle_num = (i*(i+1)) // 2               # the ith triangle number
         num_of_divs = num_divisors(triangle_num)
         if num_of_divs > NUM_DIVS:
             return triangle_num

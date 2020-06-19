@@ -11,6 +11,7 @@ This repository is dedicated to providing implementation to the 700 problems in 
 |9|[x](./python/P9.py)||||||||
 |10|[x](./python/P10.py)||||||||
 |11|[x](./python/P11.py)||||||||
+|12|[x](./python/P12.py)||||||||
 ||||||||||
 
 
