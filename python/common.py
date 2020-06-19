@@ -11,3 +11,11 @@ def is_pythagorean(a, b, c):
     if a**2 + b**2 == c**2:
         return True
     return False
+
+
+def num_divisors(n):
+    count = 0
+    for i in range(1, n // 2 + 1):
+        if n % i == 0: count += 2
+        if i * i == n: count -= 1   # perfect squares
+    return count
