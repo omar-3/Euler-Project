@@ -19,3 +19,13 @@ def num_divisors(n):
         if n % i == 0: count += 2
         if i * i == n: count -= 1   # perfect squares
     return count
+
+def next_collatz_elem(n):
+    if n & 1: return 3*n + 1
+    else: return n // 2
+
+def collatz_seq(n):
+    element = n
+    while element != 1:
+        element =  next_collatz_elem(element)
+        yield element
