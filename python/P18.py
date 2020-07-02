@@ -23,5 +23,4 @@ def solve():
 
 if __name__ == "__main__":      
     solve()
-    for row in TRIANGLE:
-        print(row)
+    print(TRIANGLE[0][0])
