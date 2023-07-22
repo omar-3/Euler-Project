@@ -15,13 +15,13 @@ public class Main {
   }
 
   public static List<Integer> primeSieve(int n) {
-    List<Boolean> sieve = new ArrayList<>(Collections.nCopies(n, true));
+    var sieve = new ArrayList<>(Collections.nCopies(n, true));
     sieve.set(0, false);
     sieve.set(1, false);
 
-    for (int elem = 2; elem * elem <= n; elem++) {
+    for (var elem = 2; elem * elem <= n; elem++) {
       if (sieve.get(elem)) {
-        for (int multiply = elem * elem; multiply < n; multiply += elem) {
+        for (var multiply = elem * elem; multiply < n; multiply += elem) {
           sieve.set(multiply, false);
         }
       }
